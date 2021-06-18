@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #21D4FD;
+    background-image: linear-gradient(34deg, #21D4FD 0%, #B721FF 100%);
+    
+}
+
+.weather{
+    height: 60vh;
+    width: 30vw;
+    background-color:aqua;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20vh;
+    margin-bottom: 20vh;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.172);
+border-radius: 10px;
+/* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
+    justify-content: center;
+}
+.weatherInfo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: rgb(236, 206, 206);
+}
