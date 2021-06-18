@@ -35,6 +35,9 @@ $(document).ready(function () {
             else{
                 $("#prescription1").html("It is raining, go save your crops!");
             }
+            if(data.name == "Shuzenji"){
+                $("#city").html("At your location:");
+            }
         });
     }
     function updateDOM(data) {
