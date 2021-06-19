@@ -1,3 +1,7 @@
+var now = new Date(Date.now());
+var formatted = now.getHours() + ":" + now.getMinutes() + ":" + now.getSeconds();
+
+console.log(formatted);
 $(document).ready(function () {
     
         navigator.geolocation.getCurrentPosition(success, error);
@@ -36,12 +40,19 @@ $(document).ready(function () {
             $("#humidity").html("Humidity is: " + data.main.humidity + "%");
             $("#city").html("Your city: " + data.name);
             $("#wind").html("Wind speed: " + data.wind.speed + "kmph");
-            if (data.main.temp_max > "25"){
-                console.log("u got bamboozled")
-                $("#prescription").html("The temperature is suitable for <em>kharif</em> crops");
+            if(now.getHours() > 12){
+                $("#currentTime").html("Current time " + (now.getHours()  - 12)+ " : " + now.getMinutes() + " PM");
             }
             else{
-                $("#prescription").html("The temperature is suitable for <em>rabi</em> crops");
+                $("#currentTime").html("Current time: " + (now.getHours())+ ":" + now.getMinutes() + " AM");
+
+            }
+            if (data.main.temp_max > "25"){
+                console.log("u got bamboozled")
+                $("#prescription").html("The temperature is suitable for <em>kharif</em> crops.");
+            }
+            else{
+                $("#prescription").html("The temperature is suitable for <em>rabi</em> crops.");
         
             }
         

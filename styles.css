@@ -43,7 +43,7 @@ border-radius: 10px;
     /* text-shadow: 8px; */
     text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
     color: rgb(236, 206, 206);
-
+    margin: 3% 0;
 }
 @media (max-width: 480px) {
     .weather{
@@ -55,7 +55,7 @@ border-radius: 10px;
     .weatherInfo{
         font-size: 1.50rem;
         font-weight: 400;
-        margin: 20px 0;
+        margin: 13.5px 0;
         text-align: center;
     }
   }
