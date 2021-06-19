@@ -36,7 +36,7 @@ $(document).ready(function () {
             location.reload();
         }
         else{
-            $("#temperature").html(data.main.temp_max + "° Celcius");
+            $("#temperature").html(data.main.temp_max + "° Celsius");
             $("#humidity").html("Humidity is: " + data.main.humidity + "%");
             $("#city").html("Your city: " + data.name);
             $("#wind").html("Wind speed: " + data.wind.speed + "kmph");
