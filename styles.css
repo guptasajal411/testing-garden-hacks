@@ -1,9 +1,11 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #21D4FD;
-    background-image: linear-gradient(34deg, #21D4FD 0%, #B721FF 100%);
-    
+    /* background-color: #21D4FD; */
+    /* background-image: linear-gradient(34deg, #21D4FD 0%, #B721FF 100%); */
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .container{
     display: flex;
@@ -22,8 +24,8 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-  backdrop-filter: blur(8px);
-  background-color: rgba(32, 32, 32, 0.144);
+  backdrop-filter: blur(15px);
+  background-color: rgba(0, 0, 0, 0.158);
 border-radius: 10px;
 /* border: 1px solid rgba( 255, 255, 255, 0.18 ); */
     justify-content: center;
@@ -31,10 +33,15 @@ border-radius: 10px;
     -webkit-box-shadow: 8px 10px 43px -12px rgba(0,0,0,1);
     -moz-box-shadow: 8px 10px 43px -12px rgba(0,0,0,1);
     border: 1px solid rgba(250, 230, 230, 0.11);
+    padding-left: 5%;
+    padding-right: 5%;
 }
 .weatherInfo{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: 1.75rem;
+    /* text-shadow: 8px; */
+    text-shadow: 1px 1px 4px rgba(150, 150, 150, 1);
     color: rgb(236, 206, 206);
+
 }
