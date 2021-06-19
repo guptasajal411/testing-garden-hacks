@@ -11,6 +11,7 @@ $(document).ready(function () {
 
     function error() {
         console.log('There was an error');
+        $("#city").html("Allow location permission to proceed.");
     }
 
     // Call Weather
