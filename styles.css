@@ -49,6 +49,8 @@ border-radius: 10px;
     .weather{
         width: 70vw;
         height: 80vh;
+        backdrop-filter: blur(7.25px);
+
     }
     .weatherInfo{
         font-size: 1.50rem;
