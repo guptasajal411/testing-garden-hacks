@@ -44,11 +44,16 @@ body{
     margin: 3% 0;
 }
 @media (max-width: 480px) {
+    .container {
+        align-items:flex-start;
+        justify-content:center;
+    }
     .weather{
         width: 70vw;
         height: 80vh;
         backdrop-filter: blur(7.25px);
         border-radius: 40px;
+        margin-top: 5vh;
     }
     .weatherInfo{
         font-size: 1.50rem;
